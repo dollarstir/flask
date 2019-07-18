@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Code: Register</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    
+    <link href="/static/style.css" rel="stylesheet" type ="text/css" >
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" href=" https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css"> -->
+    <script src="/static/jquery-3.3.1.slim.min.js"></script>
+    <script src="/static/popper.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+    
+</head>
+<body>
+<nav>
+    <div class="stamp">
+        <div class="coderap">
+        <p>Global C<>de</p>
+    </div>
+    </div>
+
+    <ul>
+        <li >
+            <a href="/home" class="nav-link">Home</a>
+        </li>
+        <li>
+                <a href="/courses" class="nav-link">Courses</a>
+        </li>
+
+        <li>
+             <a href="/about" class="nav-link">About</a>
+            </li>
+            <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+
+                <li class="active">
+                        <a href="/register" class="nav-link" id="active">Register</a>
+                    </li>
+                    <li>
+                            <a href="#" class="nav-link">Developers</a>
+                        </li>
+    </ul>
+    <!-- <p class="hi"><marquee>Hello from a template</marquee></p> -->
+</nav>
+<!-- 
+<div class="slidcont"> 
+    <img src="/static/1.jpg"  alt="slide" width="100%" height="550px;" /> 
+    
+ </div>
+
+
+
+<div class="newscont">
+    <p class="newstitle">Developers News about </p>
+    <div class="newswrap">
+        <img src="/static/1.jpg" alt="news" width="100px" height="100px"  class="newstumb">
+        <p class="newtt">Global Code UCC</p>
+        <article>
+
+            Suspendisse purus felis, porttitor quis sollicitudin sit<br> amet, elementum et tortor. Praesent lacinia magna in<br> malesuada vestibulum. Pellentesque urna libero.
+        </article>
+        <a href="#" class="readmore">Read More</a>
+    </div>
+    <div class="newswrap">
+            <img src="/static/2.jpg" alt="news" width="100px" height="100px"  class="newstumb">
+            <p class="newtt">Global Leason Time</p>
+            <article>
+                {{fro}}!
+               
+                Suspendisse purus felis, porttitor quis sollicitudin sit<br> amet, elementum et tortor. Praesent lacinia magna in<br> malesuada vestibulum. Pellentesque urna libero.
+            </article>
+
+        <a href="#" class="readmore">Read More</a>
+    </div>
+    <div class="newswrap">
+            <img src="/static/1.jpg" alt="news" width="100px" height="100px"  class="newstumb">
+            <p class="newtt">Global Code UCC</p>
+            <article>
+        
+                Suspendisse purus felis, porttitor quis sollicitudin sit<br> amet, elementum et tortor. Praesent lacinia magna in<br> malesuada vestibulum. Pellentesque urna libero.
+            </article>
+        <a href="#" class="readmore">Read More</a>
+    </div>
+    <div class="newswrap">
+            <img src="/static/1.jpg" alt="news" width="100px" height="100px"  class="newstumb">
+            <p class="newtt">Global Code Lab</p>
+            <article>
+        
+                Suspendisse purus felis, porttitor quis sollicitudin sit<br> amet, elementum et tortor. Praesent lacinia magna in<br> malesuada vestibulum. Pellentesque urna libero.
+            </article>
+        <a href="#" class="readmore">Read More</a>
+    </div>
+
+</div>
+<br><br><br>
+
+<div class="eventscont">
+    <p class="eventhd">Events</p>
+
+
+
+
+</div> -->
+
+
+    <div class="log">
+        <br><br><br>
+<form action="/add_todo">
+    <input type="text" placeholder="User name" class="ipt" name="user">
+    
+      <input type="text" placeholder="Add item" class="ipt" name="item">
+      <!-- <input type="text" placeholder="Password" class="ipt1"> -->
+      <input type="date" placeholder="Date" class="ipt1" name="date">
+      <input type="submit" value="Add" class="btnlog">
+
+    </form>
+
+   
+<br><br>
+
+<ol>
+        {%for item in getlist%}
+       <li> {{item}}</li>
+        {%endfor%}
+    
+</ol>
+
+   
+
+    </div>
+
+
+</body>
+</html>
